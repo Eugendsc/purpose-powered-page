@@ -15,7 +15,7 @@ const PricingSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Elige el impulso que<br />
-            <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+            <span className="text-primary font-bold">
               tu marca necesita
             </span>
           </h2>
@@ -152,7 +152,7 @@ const PricingSection = () => {
 
             <Button 
               onClick={scrollToContact}
-              className="w-full hero-button"
+              className="w-full"
             >
               Elegir Pack Completo
             </Button>

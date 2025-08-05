@@ -134,7 +134,6 @@ All colors MUST be HSL.
   /* Hero button styles */
   .hero-button {
     @apply bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-lg;
-    background: var(--gradient-primary);
     box-shadow: var(--shadow-elegant);
   }
 
@@ -161,8 +160,7 @@ All colors MUST be HSL.
   }
 
   .pricing-card.popular {
-    @apply border-primary relative;
-    background: var(--gradient-hero);
+    @apply border-primary relative bg-card;
     box-shadow: var(--shadow-elegant);
   }
 

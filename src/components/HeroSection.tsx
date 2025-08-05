@@ -28,7 +28,7 @@ const HeroSection = () => {
       <div className="container mx-auto text-center max-w-4xl">
         <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
           Visibilidad real,<br />
-          <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+          <span className="text-primary font-bold">
             impacto consciente
           </span>
         </h1>
@@ -40,7 +40,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-6 items-center justify-center mb-16">
           <Button 
             onClick={scrollToContact}
-            className="hero-button text-lg px-8 py-4 h-auto"
+            className="text-lg px-8 py-4 h-auto"
           >
             <Rocket className="mr-2 h-5 w-5" />
             Potenciar mi marca

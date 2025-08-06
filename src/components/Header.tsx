@@ -38,11 +38,12 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">V</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">Virenso</span>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/2670dc17-45f6-499d-a8da-fe8c56af0324.png" 
+              alt="Virenso Logo" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Navigation */}

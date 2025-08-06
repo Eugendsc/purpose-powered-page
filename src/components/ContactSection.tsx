@@ -45,7 +45,7 @@ const ContactSection = () => {
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold text-foreground mb-4">
                 Más visibilidad,<br />
-                <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+                <span className="text-primary font-bold">
                   menos fricción
                 </span>
               </h3>
@@ -96,7 +96,7 @@ const ContactSection = () => {
               </p>
             </div>
 
-            <Button className="w-full hero-button text-lg py-4 h-auto mb-6">
+            <Button className="w-full text-lg py-4 h-auto mb-6">
               <Calendar className="mr-2 h-5 w-5" />
               Agenda tu sesión
             </Button>

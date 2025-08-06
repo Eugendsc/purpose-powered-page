@@ -22,7 +22,7 @@ const HeroSection = () => {
   return (
     <section 
       id="hero" 
-      className="min-h-screen flex flex-col items-center justify-center relative px-6"
+      className="min-h-screen flex flex-col items-center justify-center relative px-6 pt-20"
       style={{ background: "var(--gradient-hero)" }}
     >
       <div className="container mx-auto text-center max-w-4xl">

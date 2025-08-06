@@ -12,7 +12,7 @@ const ContactSection = () => {
               <h2 className="text-3xl font-bold text-foreground mb-4">
                 ¿Solo necesitas un servicio específico?
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-lg text-muted-foreground mb-8 lg:text-left text-center">
                 Contáctanos para servicios individuales personalizados
               </p>
             </div>

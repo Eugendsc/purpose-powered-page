@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react"
-import { Moon, Sun } from "lucide-react"
+import { Moon, Sun, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "./ThemeProvider"
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { theme, setTheme } = useTheme()
 
   useEffect(() => {
@@ -21,6 +22,7 @@ const Header = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
     }
+    setIsMobileMenuOpen(false) // Close mobile menu when navigating
   }
 
   const toggleTheme = () => {
@@ -100,9 +102,69 @@ const Header = () => {
             >
               Empezar ahora
             </Button>
+            
+            {/* Mobile menu button */}
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden w-9 h-9"
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
+            </Button>
           </div>
         </div>
       </div>
+      
+      {/* Mobile menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border">
+          <div className="container mx-auto px-6 py-4">
+            <nav className="flex flex-col space-y-4">
+              <button 
+                onClick={() => scrollToSection("hero")}
+                className="text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                Inicio
+              </button>
+              <button 
+                onClick={() => scrollToSection("servicios")}
+                className="text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                Servicios
+              </button>
+              <button 
+                onClick={() => scrollToSection("como-funciona")}
+                className="text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                Cómo funciona
+              </button>
+              <button 
+                onClick={() => scrollToSection("planes")}
+                className="text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                Planes
+              </button>
+              <button 
+                onClick={() => scrollToSection("contacto")}
+                className="text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                Contacto
+              </button>
+              <Button 
+                onClick={() => scrollToSection("contacto")}
+                className="hero-button w-full mt-4"
+              >
+                Empezar ahora
+              </Button>
+            </nav>
+          </div>
+        </div>
+      )}
     </header>
   )
 }

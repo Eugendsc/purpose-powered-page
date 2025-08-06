@@ -40,9 +40,9 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/2670dc17-45f6-499d-a8da-fe8c56af0324.png" 
+              src="/lovable-uploads/a58126d1-401f-43fa-927b-0c1c2606d245.png" 
               alt="Virenso Logo" 
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </div>
 

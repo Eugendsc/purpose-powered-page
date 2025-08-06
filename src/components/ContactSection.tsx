@@ -24,7 +24,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Correo</p>
-                  <p className="text-lg font-semibold text-foreground">info@virenso.es</p>
+                  <p className="text-lg font-semibold text-foreground"><a href="mailto:info@virenso.es">info@virenso.es</a></p>
                 </div>
               </div>
 
@@ -34,7 +34,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Instagram</p>
-                  <p className="text-lg font-semibold text-foreground">virenso.digital</p>
+                  <p className="text-lg font-semibold text-foreground"><a href="https://www.instagram.com/virenso.digital?igsh=eWxvdWhpejYybnM1&utm_source=qr" target="_blank">virenso.digital</a></p>
                 </div>
               </div>
             </div>

@@ -42,7 +42,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src={theme === "dark" ? "/lovable-uploads/d7408623-3ecd-4d48-a1e9-fb84758a611b.png" : "/lovable-uploads/a58126d1-401f-43fa-927b-0c1c2606d245.png"}
+              src={theme === "dark" ? "/logo-lightmode.png" : "/logo-darkmode.png"}
               alt="Virenso Logo" 
               className="h-12 w-auto"
             />

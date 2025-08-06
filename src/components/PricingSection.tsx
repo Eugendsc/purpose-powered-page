@@ -30,7 +30,7 @@ const PricingSection = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">Pack Esencial</h3>
               <p className="text-muted-foreground mb-4">Análisis + Reels/Carruseles</p>
-              <div className="text-4xl font-bold text-primary mb-2">80€</div>
+              <div className="text-4xl font-bold text-primary mb-2">87€</div>
               <p className="text-sm text-muted-foreground">Precio</p>
             </div>
 
@@ -58,7 +58,7 @@ const PricingSection = () => {
             </ul>
 
             <Button 
-              onClick={scrollToContact}
+              onClick={() => window.open("https://www.paypal.com/ncp/payment/YQRK7VXXDR28G", "_blank")}
               variant="outline" 
               className="w-full"
             >
@@ -71,7 +71,7 @@ const PricingSection = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">Pack Comunicación</h3>
               <p className="text-muted-foreground mb-4">Análisis + Chatbot IA</p>
-              <div className="text-4xl font-bold text-primary mb-2">450€</div>
+              <div className="text-4xl font-bold text-primary mb-2">480€</div>
               <p className="text-sm text-muted-foreground">Precio</p>
             </div>
 
@@ -95,7 +95,7 @@ const PricingSection = () => {
             </ul>
 
             <Button 
-              onClick={scrollToContact}
+              onClick={() => window.open("https://www.paypal.com/ncp/payment/L676LYNMNGLC4", "_blank")}
               variant="outline" 
               className="w-full"
             >
@@ -115,7 +115,7 @@ const PricingSection = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">Pack Completo</h3>
               <p className="text-muted-foreground mb-4">Todo incluido</p>
-              <div className="text-4xl font-bold text-primary mb-2">490€</div>
+              <div className="text-4xl font-bold text-primary mb-2">449€</div>
               <p className="text-sm text-muted-foreground">Precio</p>
             </div>
 
@@ -151,7 +151,7 @@ const PricingSection = () => {
             </ul>
 
             <Button 
-              onClick={scrollToContact}
+              onClick={() => window.open("https://www.paypal.com/ncp/payment/FH93WRW9ZAYKJ", "_blank")}
               className="w-full"
             >
               Elegir Pack Completo

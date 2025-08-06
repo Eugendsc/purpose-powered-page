@@ -96,7 +96,10 @@ const ContactSection = () => {
               </p>
             </div>
 
-            <Button className="w-full text-lg py-4 h-auto mb-6">
+            <Button 
+              onClick={() => window.open("https://calendly.com/virenso", "_blank")}
+              className="w-full text-lg py-4 h-auto mb-6"
+            >
               <Calendar className="mr-2 h-5 w-5" />
               Agenda tu sesión
             </Button>

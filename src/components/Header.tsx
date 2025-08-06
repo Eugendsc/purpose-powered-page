@@ -42,7 +42,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/a58126d1-401f-43fa-927b-0c1c2606d245.png" 
+              src={theme === "dark" ? "/lovable-uploads/d7408623-3ecd-4d48-a1e9-fb84758a611b.png" : "/lovable-uploads/a58126d1-401f-43fa-927b-0c1c2606d245.png"}
               alt="Virenso Logo" 
               className="h-12 w-auto"
             />
@@ -97,7 +97,7 @@ const Header = () => {
               )}
             </Button>
             <Button 
-              onClick={() => scrollToSection("contacto")}
+              onClick={() => window.open("https://calendly.com/virenso", "_blank")}
               className="hero-button hidden md:inline-flex"
             >
               Empezar ahora
@@ -156,7 +156,7 @@ const Header = () => {
                 Contacto
               </button>
               <Button 
-                onClick={() => scrollToSection("contacto")}
+                onClick={() => window.open("https://calendly.com/virenso", "_blank")}
                 className="hero-button w-full mt-4"
               >
                 Empezar ahora

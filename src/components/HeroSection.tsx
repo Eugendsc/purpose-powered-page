@@ -47,7 +47,7 @@ const HeroSection = () => {
           </Button>
           <div className="text-center">
             <p className="text-sm text-muted-foreground">Desde:</p>
-            <p className="text-2xl font-bold text-primary">80€</p>
+            <p className="text-2xl font-bold text-primary">87€</p>
           </div>
         </div>
       </div>

@@ -89,7 +89,7 @@ const ContactSection = () => {
             </div>
 
             <div className="text-center mb-8">
-              <p className="text-2xl font-bold text-primary mb-2">Desde 80€</p>
+              <p className="text-2xl font-bold text-primary mb-2">Desde 87€</p>
               <p className="text-muted-foreground">
                 Reserva tu sesión gratuita y descubre cómo aumentar la visibilidad de tu marca 
                 con una estrategia clara y automatizada.

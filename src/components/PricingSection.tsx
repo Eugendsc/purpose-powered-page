@@ -71,7 +71,7 @@ const PricingSection = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">Pack Comunicación</h3>
               <p className="text-muted-foreground mb-4">Análisis + Chatbot IA</p>
-              <div className="text-4xl font-bold text-primary mb-2">480€</div>
+              <div className="text-4xl font-bold text-primary mb-2">600€</div>
               <p className="text-sm text-muted-foreground">Precio</p>
             </div>
 

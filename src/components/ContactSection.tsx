@@ -111,7 +111,7 @@ const ContactSection = () => {
               </div>
               <div className="flex items-center">
                 <Clock className="h-4 w-4 mr-1" />
-                Resultados visibles en la primera semana
+                Resultados visibles en el primer mes
               </div>
             </div>
           </div>

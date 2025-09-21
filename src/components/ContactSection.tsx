@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 const ContactSection = () => {
   return (
-    <section id="contacto" className="py-20 px-6 bg-muted/30">
+    <section id="contacto" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Contact Info */}
@@ -41,16 +41,16 @@ const ContactSection = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="feature-card">
+          <div className="feature-card popular">
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold text-foreground mb-4">
-                Más visibilidad,<br />
+                Más fluidez,<br />
                 <span className="text-primary font-bold">
                   menos fricción
                 </span>
               </h3>
               <p className="text-lg text-muted-foreground mb-6">
-                Soluciones reales para automatizar, comunicar y crecer con impacto.
+                 Soluciones con IA para automatizar conversaciones y potenciar la experiencia de tus clientes.
               </p>
             </div>
 
@@ -67,15 +67,15 @@ const ContactSection = () => {
                 </li>
                 <li className="flex items-start">
                   <Check className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                  <span>30 días de calendario editorial</span>
+                  <span>Flujos automatizados de atención al cliente (FAQs, reservas, ventas, consultas rápidas)</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                  <span>5 plantillas de reels educativos</span>
+                  <span>Secuencias de captación de leads y retención de clientes</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                  <span>5 carruseles de storytelling</span>
+                  <span>Integración multicanal</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -88,11 +88,17 @@ const ContactSection = () => {
               </ul>
             </div>
 
-            <div className="text-center mb-8">
-              <p className="text-2xl font-bold text-primary mb-2">Desde 87€</p>
+            <div className="text-center mb-3">
+              <p className="text-2xl font-bold text-primary mb-2">Desde 600€</p>
+              <Button 
+                onClick={() => window.open("https://www.paypal.com/ncp/payment/L676LYNMNGLC4", "_blank")}
+                // variant="outline" 
+                className="w-full mb-8 payment-bottom popular text-gray text-lg py-4 h-auto">
+                Reserva tu proyecto
+              </Button>
               <p className="text-muted-foreground">
-                Reserva tu sesión gratuita y descubre cómo aumentar la visibilidad de tu marca 
-                con una estrategia clara y automatizada.
+                Reserva tu sesión gratuita y descubre cómo un asistente virtual con IA puede transformar 
+                tu atención al cliente con una estrategia clara y automatizada.
               </p>
             </div>
 

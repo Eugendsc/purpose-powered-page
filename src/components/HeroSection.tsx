@@ -34,7 +34,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          Automatiza procesos, comunica con intención y haz crecer tu marca con soluciones digitales alineadas con tus valores.
+          Automatiza procesos, comunica con intención y haz crecer tu marca con asistentes virtuales entrenados en tus valores.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 items-center justify-center mb-16">
@@ -47,7 +47,7 @@ const HeroSection = () => {
           </Button>
           <div className="text-center">
             <p className="text-sm text-muted-foreground">Desde:</p>
-            <p className="text-2xl font-bold text-primary">87€</p>
+            <p className="text-2xl font-bold text-primary">600€</p>
           </div>
         </div>
       </div>

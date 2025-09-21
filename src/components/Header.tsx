@@ -68,12 +68,12 @@ const Header = () => {
             >
               Cómo funciona
             </button>
-            <button 
+            {/* <button 
               onClick={() => scrollToSection("planes")}
               className="text-foreground hover:text-primary transition-colors"
             >
               Planes
-            </button>
+            </button> */}
             <button 
               onClick={() => scrollToSection("contacto")}
               className="text-foreground hover:text-primary transition-colors"

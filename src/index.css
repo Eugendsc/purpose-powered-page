@@ -148,6 +148,26 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-card);
   }
 
+  .feature-card.popular {
+    @apply border-primary relative bg-card;
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .payment-bottom {
+    @apply bg-card rounded-xl p-8 transition-all duration-300 hover:shadow-lg border border-border;
+    box-shadow: var(--shadow-card);
+  }
+
+  .payment-bottom.popular {
+    @apply border-primary relative bg-card;
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .payment-bottom:hover {
+    box-shadow: 0 8px 30px -6px hsl(220 13% 13% / 0.12);
+    background-color: #aefad6 !important;
+  }
+
   .feature-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 30px -6px hsl(220 13% 13% / 0.12);

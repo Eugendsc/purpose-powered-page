@@ -1,4 +1,4 @@
-import { Search, Bot, Palette } from "lucide-react"
+import { ListChecks, Bot, Palette, BrainCircuit } from "lucide-react"
 
 const ServicesSection = () => {
   return (
@@ -20,42 +20,42 @@ const ServicesSection = () => {
           {/* Service 1 */}
           <div className="feature-card text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Search className="h-8 w-8 text-primary" />
+              <Bot className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              Auditoría digital personalizada
+              Asistente IA personalizado
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Análisis completo de tu presencia online con recomendaciones claras y aplicables, 
-              adaptadas a marcas que quieren destacar con coherencia.
+              Un chatbot entrenado en los valores y tono de tu marca que responde 
+              con autenticidad, resuelve dudas y capta leads sin fricciones.
             </p>
           </div>
 
           {/* Service 2 */}
           <div className="feature-card text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Bot className="h-8 w-8 text-primary" />
+              <BrainCircuit className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              Chatbot inteligente entrenado
+              Automatización inteligente
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Asistente IA que comunica tus valores, responde automáticamente y mejora la 
-              atención al cliente sin perder autenticidad.
+              Flujos diseñados para ahorrar tiempo: desde responder preguntas 
+              frecuentes hasta guiar a tus clientes en el proceso de compra.
             </p>
           </div>
 
           {/* Service 3 */}
           <div className="feature-card text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Palette className="h-8 w-8 text-primary" />
+              <ListChecks className="h-8 w-8 text-primary" />
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              Kit de contenidos visuales
+              Estrategia de implementación
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Plantillas de contenido diseñadas para atraer, emocionar y contar la historia 
-              detrás de tu marca de forma visual y efectiva.
+              No solo instalamos un chatbot: lo integramos en tu negocio 
+              con un plan claro, optimizado y adaptado a tus objetivos.
             </p>
           </div>
         </div>

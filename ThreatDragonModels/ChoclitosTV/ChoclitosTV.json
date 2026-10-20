@@ -86,9 +86,9 @@
                 "499df6d1-5f29-408c-afdb-9bc0879866ba",
                 "8f2ab8e5-3f38-4c69-b2de-858a798d7ea3",
                 "6f882325-8d8c-40c2-8379-9a568bfbba80",
-                "632a6c7b-80a6-47c5-a8b4-f653b5f303b8",
                 "dfc4c11c-ded3-49a6-b621-a15b763dabc2",
-                "b8f100f8-0d54-4f26-b7b7-0f385e22d2dc"
+                "b8f100f8-0d54-4f26-b7b7-0f385e22d2dc",
+                "fd319f42-3d5a-40f5-8767-0e601b8eff7f"
               ],
               "containedElements": [
                 "484ddef5-8474-4ec2-b133-64e3538596f0",
@@ -168,11 +168,11 @@
                 "d7de369e-9c19-4448-8903-cb95582aa6bf",
                 "8f2ab8e5-3f38-4c69-b2de-858a798d7ea3",
                 "6f882325-8d8c-40c2-8379-9a568bfbba80",
-                "632a6c7b-80a6-47c5-a8b4-f653b5f303b8",
                 "dfc4c11c-ded3-49a6-b621-a15b763dabc2",
                 "3fe225b2-223a-4025-adee-0cb1642c3401",
                 "0dd5bf06-fa09-4870-a425-b944512b755e",
-                "b8f100f8-0d54-4f26-b7b7-0f385e22d2dc"
+                "b8f100f8-0d54-4f26-b7b7-0f385e22d2dc",
+                "fd319f42-3d5a-40f5-8767-0e601b8eff7f"
               ],
               "containedElements": [
                 "d0333a41-d8c9-4d3e-b013-ef8725ec3120",
@@ -1282,7 +1282,7 @@
           },
           {
             "position": {
-              "x": 1133.999999999996,
+              "x": 1123.999999999996,
               "y": 305.0000000000007
             },
             "size": {
@@ -1294,11 +1294,13 @@
                 "text": "Redis Cache"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1395,13 +1397,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "4c75a2a4-9f5c-431f-b91c-9a571c06f9bc",
+                  "title": "Lectura de tokens de sesión en Redis",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "acceso indebido a Redis que permite leer los tokens de sesión y reutilizarlos para secuestrar sesiones",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "12"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1418,8 +1440,8 @@
                 "text": "Monitorización"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1516,12 +1538,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "c683cb56-019c-44e0-bfd5-191ccf21652a",
+                  "title": "Logs alterables o sin protección que ocultan acciones",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Sin logs íntegros no hay auditoría",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2418,61 +2462,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Datos de usuario",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "a6a836b3-86b6-4974-ad27-d8b63a387b2d",
-                "1db71032-4727-4f39-b9cf-67b3c41f1acc"
-              ]
-            },
-            "labels": [
-              "Datos de usuario"
-            ],
-            "id": "632a6c7b-80a6-47c5-a8b4-f653b5f303b8",
-            "source": {
-              "cell": "a1fcf7f0-ce23-400b-9dba-c5fa058fa509",
-              "port": "69d1bc71-6e60-4bf8-bfac-2df475be15a5"
-            },
-            "target": {
-              "cell": "484ddef5-8474-4ec2-b133-64e3538596f0",
-              "port": "fe9e5db8-a331-4538-9ede-6ca7e6a75faf"
-            },
-            "vertices": [
-              {
-                "x": 990,
-                "y": 340
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Suscripciones e historial de pagos",
               "description": "",
               "outOfScope": false,
@@ -3178,6 +3167,61 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Datos de usuario",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "a6a836b3-86b6-4974-ad27-d8b63a387b2d",
+                "1db71032-4727-4f39-b9cf-67b3c41f1acc"
+              ]
+            },
+            "labels": [
+              "Datos de usuario"
+            ],
+            "id": "fd319f42-3d5a-40f5-8767-0e601b8eff7f",
+            "source": {
+              "cell": "a1fcf7f0-ce23-400b-9dba-c5fa058fa509",
+              "port": "69d1bc71-6e60-4bf8-bfac-2df475be15a5"
+            },
+            "target": {
+              "cell": "484ddef5-8474-4ec2-b133-64e3538596f0",
+              "port": "fe9e5db8-a331-4538-9ede-6ca7e6a75faf"
+            },
+            "vertices": [
+              {
+                "x": 940,
+                "y": 340
+              }
+            ]
+          },
+          {
             "position": {
               "x": 1920,
               "y": 90.00000000000068
@@ -3191,8 +3235,8 @@
                 "text": "CI/CD"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3289,12 +3333,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "b92be419-f1e1-4432-8650-12eaac5be6fe",
+                  "title": "Código alterado o secretos expuestos",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Código alterado o secretos expuestos",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": "10"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -3311,8 +3377,8 @@
                 "text": "WAF+Balanceador"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3409,12 +3475,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2de57712-2c4f-4e34-b548-8e587465e9f8",
+                  "title": "DDoS o saturación del servicio",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Es el único punto de entrada desde Internet",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             },
             "children": [
               "1975c2b0-326d-4d39-b32b-8f3f90f42eb8"
@@ -3696,8 +3784,8 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3793,12 +3881,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "df292ad7-0577-4267-8f76-6195681ae23a",
+                  "title": "Acceso a perfiles de otros usuarios",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Gestiona nombre, correo y dirección",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": "12"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             },
             "zIndex": 17
           },
@@ -3816,8 +3926,8 @@
                 "text": "Subscription"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3913,12 +4023,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "0eb2fae4-04d9-4d10-96c2-519554bb5c70",
+                  "title": "Alteración de planes, estado de suscripción o historial de pagos",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Afecta a ingresos y a la facturación",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             },
             "zIndex": 18
           },
@@ -4056,8 +4188,8 @@
                 "text": "Pasarela de pago (Stripe/PayPal)"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4154,9 +4286,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "95e00d48-a3b7-4e40-9517-a4a7be0bf0a4",
+                  "title": "Notificación de pago falsa que activa suscripciones sin cobro",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Conexión con un tercero fuera de la infraestructura propia",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -4806,6 +4956,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Eugenio",
-    "threatTop": 8
+    "threatTop": 15
   }
 }

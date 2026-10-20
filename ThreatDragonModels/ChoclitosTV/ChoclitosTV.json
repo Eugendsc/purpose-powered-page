@@ -150,7 +150,9 @@
               "description": "Zona interna",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "ff148668-9c17-4c80-a201-2e3202937d26"
+              ],
               "containedElements": [
                 "4bda27e4-a181-4d6c-9510-339a6e5801a9"
               ]
@@ -395,7 +397,7 @@
           },
           {
             "position": {
-              "x": 1135.9999999999975,
+              "x": 1095.9999999999975,
               "y": 570
             },
             "size": {
@@ -508,6 +510,13 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1924,105 +1933,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Conexión VPN",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Conexión VPN"
-            ],
-            "id": "9ee4281e-4e7b-4396-86bd-eddbf8549f60",
-            "source": {
-              "cell": "f921d324-b5b3-4161-84b1-92760c3d76b0",
-              "port": "2a5d44c8-100e-4933-9da4-203cbbfa1096"
-            },
-            "target": {
-              "cell": "5621958a-284e-4b52-8c71-3bfa8d4c3021",
-              "port": "533da98d-b2bc-4ac7-825e-a4e847be21a0"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Conexión VPN",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Conexión VPN"
-            ],
-            "id": "ff148668-9c17-4c80-a201-2e3202937d26",
-            "source": {
-              "x": 1241,
-              "y": 142
-            },
-            "target": {
-              "cell": "4d447e9f-b882-4f5a-ba8a-ecd2ed396df1",
-              "port": "0d92422a-142f-4087-a0ed-bbe489e21415"
-            },
-            "vertices": [
-              {
-                "x": 1360,
-                "y": 142
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -2102,6 +2012,64 @@
               {
                 "x": 350,
                 "y": 420
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Conexión VPN",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "415d1490-12e5-4c09-97cf-14373b8a3424"
+              ]
+            },
+            "labels": [
+              "Conexión VPN"
+            ],
+            "id": "ff148668-9c17-4c80-a201-2e3202937d26",
+            "source": {
+              "cell": "4d447e9f-b882-4f5a-ba8a-ecd2ed396df1",
+              "port": "0d92422a-142f-4087-a0ed-bbe489e21415"
+            },
+            "target": {
+              "cell": "4bda27e4-a181-4d6c-9510-339a6e5801a9",
+              "port": "69d1bc71-6e60-4bf8-bfac-2df475be15a5"
+            },
+            "vertices": [
+              {
+                "x": 1340,
+                "y": 142
+              },
+              {
+                "x": 1290,
+                "y": 142
               }
             ]
           },
@@ -2224,6 +2192,53 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Conexión VPN",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Conexión VPN"
+            ],
+            "id": "9ee4281e-4e7b-4396-86bd-eddbf8549f60",
+            "source": {
+              "x": 1470,
+              "y": 530
+            },
+            "target": {
+              "cell": "5621958a-284e-4b52-8c71-3bfa8d4c3021",
+              "port": "533da98d-b2bc-4ac7-825e-a4e847be21a0"
+            },
+            "vertices": []
           }
         ]
       }
